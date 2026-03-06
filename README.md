@@ -13,6 +13,12 @@ EDAgent turns a complex research workflow into a practical product-like experien
 - structured execution with audit artifacts,
 - continuous improvement from user feedback.
 
+## Persistent SOP Across Chats and Projects
+One core advantage of EDAgent is SOP persistence beyond a single chat session.
+- SOP is stored in repository assets, not only in conversation memory.
+- Even if you switch chats or move to another project, workflow policy and operational habits are retained through repo-based governance.
+- New experience is continuously hardened into workflows, skills, and SOP records, so the system does not reset to zero each time.
+
 ## 30-Second Start
 ```bash
 git clone https://github.com/Mr-Fang-VLSI/EDAgent.git
