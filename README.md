@@ -2,6 +2,8 @@
 
 A deployable, skill-based research agent system for EDA workflows.
 
+![EDAgent Workflow Overview](docs/assets/workflow_overview.svg)
+
 ## Why EDAgent
 EDAgent turns a complex research workflow into a practical product-like experience:
 - one-command bootstrap,
