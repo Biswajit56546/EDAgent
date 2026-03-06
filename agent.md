@@ -30,6 +30,16 @@ Instead, use two-step routing:
 7. `infra_evolution`: `eda-infra-maintainer`, `eda-knowledge-gate-maintainer`, `git-version-control`
 8. `reporting_slides`: `eda-retro`, `academic-presentation-crafter`, `academic-slide-refiner`
 
+### Known vs New Workflow Decision
+After intent parsing, agent must branch explicitly:
+1. If request matches a known workflow class:
+- use that workflow's skill subset and continue normal PLAN -> EXECUTE -> CHECK cycle.
+2. If request does not match any known workflow class:
+- run a temporary exploratory execution path using the minimal safe skill chain,
+- record task pattern, steps, failure/recovery signals, and user preference feedback,
+- if pattern is repeatable, create a new workflow definition and register its skill subset,
+- update related SOP/knowledge entries so future requests route directly to this new workflow.
+
 ## Responsibility Split (Anti-Bloat Contract)
 To keep orchestration scalable, responsibilities are explicitly separated:
 1. classification layer (agent): determine workflow class.
