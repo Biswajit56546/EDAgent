@@ -15,6 +15,10 @@
 - `python3` (3.10+ recommended)
 - `git`
 
+### One-Prompt Deployment In Codex
+- After `git clone`, open Codex and paste the prompt in:
+  - `docs/DEPLOY_PROMPT.md`
+
 ### Quick Start
 ```bash
 git clone https://github.com/Mr-Fang-VLSI/EDAgent.git
