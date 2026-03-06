@@ -19,6 +19,12 @@ One core advantage of EDAgent is SOP persistence beyond a single chat session.
 - Even if you switch chats or move to another project, workflow policy and operational habits are retained through repo-based governance.
 - New experience is continuously hardened into workflows, skills, and SOP records, so the system does not reset to zero each time.
 
+## No Skill Selection Burden for Users
+Users do not need to know, choose, or sequence skills manually.
+- The agent decides the workflow class from your task.
+- Then it selects the right skill subset and next step automatically.
+- You can stay focused on goals and constraints in natural language.
+
 ## 30-Second Start
 ```bash
 git clone https://github.com/Mr-Fang-VLSI/EDAgent.git
