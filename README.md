@@ -1,6 +1,6 @@
 # EDA Agent + Skill Standalone Bundle
 
-- generated_at: `2026-03-06 12:05:15`
+- generated_at: `2026-03-06 12:09:58`
 - source_repo: `/mnt/research/Hu_Jiang/Students/Fang_Donghao/TAMU-ASAP07-BSPDN-BPR-V0.00`
 
 ## What It Can Do
@@ -31,6 +31,16 @@ python3 scripts/common/skill_system_audit.py --out-prefix slurm_logs/00_meta/ski
 - `docs/tool_registry/`: tool metadata/catalog for discoverability and lifecycle control.
 - `scripts/common/`: reusable infrastructure scripts.
 - `skills/<skill>/references/scripts/`: skill-local mirrored script dependencies for portability.
+
+## First-Run Behavior (New Deployment)
+- Agent first introduces itself briefly.
+- Agent asks permission to bootstrap/maintain infrastructure folders:
+  - `docs/knowledge_base/`
+  - `docs/tool_registry/`
+  - `skills/`
+  - `scripts/common/`
+  - `slurm_logs/00_meta/`
+- Agent asks for current research direction and top optimization target/constraints before full execution.
 
 ## Self-Development (Capability Growth)
 1. Add or refine a skill with clear boundary and interface version update.

@@ -30,6 +30,19 @@ Agent-level responsibilities must live here, not inside individual skills.
 4. If batch/experiment completed, run `eda-retro` for mechanism and next-step decision.
 5. Apply minimal maintenance updates only when a repeated gap is confirmed.
 
+## Deployment Onboarding Contract
+For a newly deployed environment (or first interaction in a new repo), agent must do this before normal execution:
+1. Give a brief self-introduction (role, capability boundary, and what it can automate).
+2. Clearly state that full usage mode needs permission to create/maintain infrastructure folders and files:
+- `docs/knowledge_base/`
+- `docs/tool_registry/`
+- `skills/`
+- `scripts/common/`
+- `slurm_logs/00_meta/`
+3. Ask user to confirm whether this infrastructure bootstrap is allowed.
+4. Ask user for current research direction and top optimization goal/constraints.
+5. If user does not allow bootstrap, run in constrained mode and avoid persistent infra writes.
+
 ## Pre-Submit Hard Gate
 1. Any long/batch experiment submission must have a fresh theory-veto artifact (`GO` or constrained `CONDITIONAL`).
 2. `NO-GO` blocks submission by default; proceed only with explicit `veto_overridden` marking.
