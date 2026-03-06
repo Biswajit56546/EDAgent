@@ -21,6 +21,13 @@
 - `python3` (3.10+ recommended)
 - `git`
 
+### Two-Step Onboarding (Recommended)
+```bash
+git clone https://github.com/Mr-Fang-VLSI/EDAgent.git
+cd EDAgent
+python3 run_demo.py
+```
+
 ### Codex Deployment Prompt (Copy/Paste)
 Paste the following prompt into Codex after cloning the repo:
 ```text
@@ -65,6 +72,7 @@ Notes:
 ```
 
 ### Quick Start
+Manual checks (optional):
 ```bash
 git clone https://github.com/Mr-Fang-VLSI/EDAgent.git
 cd EDAgent
